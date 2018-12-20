@@ -8,9 +8,7 @@ package sortal;
 import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
-import java.util.PrimitiveIterator;
 import java.util.Random;
 
 /**
@@ -29,9 +27,7 @@ public class SortAl<T extends Comparable<T>>{
        for(int currentIndex = 1;currentIndex < al.size();currentIndex++){
            T i = al.get(currentIndex);
            
-           if(((T)al.get(currentIndex-1)).compareTo(i) < 0){
-               
-           } else {
+           if(((T)al.get(currentIndex-1)).compareTo(i) > 0){
                List<T> slice = ((ArrayList<T>)al.clone()).subList(0, currentIndex);
                Collections.reverse(slice);
                int ind = currentIndex;
