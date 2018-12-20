@@ -166,7 +166,7 @@ public class Input extends javax.swing.JFrame {
 
             jList1.setModel(dlm);
             
-            ArrayList<Integer> sorted = new SortAl<Integer>().sortInteger(data);
+            ArrayList<Integer> sorted = new SortAl<Integer>().sortAny(data);
             
             dlm = new DefaultListModel();
             

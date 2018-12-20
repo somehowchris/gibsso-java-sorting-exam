@@ -25,7 +25,7 @@ public class SortAl<T extends Comparable<T>>{
      * @param al
      * @return
      */
-    public ArrayList<T> sortInteger(ArrayList<T> al) { 
+    public ArrayList<T> sortAny(ArrayList<T> al) { 
        for(int currentIndex = 1;currentIndex < al.size();currentIndex++){
            T i = al.get(currentIndex);
            
